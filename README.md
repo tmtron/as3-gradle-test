@@ -13,3 +13,4 @@ When you execute *Analyze* - *Inspect* code on the file you will see that the er
 Notes:
 * when you import the same project in `IntelliJ 2017.2.5` it shows no error
 * [StackOverflow Question: buildSrc dir + CustomTask: Method 'doLast` is not implemented](https://stackoverflow.com/questions/47532977/buildsrc-dir-customtask-method-dolast-is-not-implemented)
+* [Android Studio Issue#70015222](https://issuetracker.google.com/issues/70015222)
