@@ -1,0 +1,33 @@
+group 'com.tmtron.test'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+
+class Greeting extends DefaultTask {
+    String message
+    String recipient
+
+    @TaskAction
+    void sayGreeting() {
+        println "gradle version ${project.getGradle().getGradleVersion()}"
+        println "${message}, ${recipient}!"
+    }
+}
+
+task hello (type : Greeting) {
+    group 'Welcome'
+    description 'Produces a world greeting'
+    message 'Hello'
+    recipient 'World'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
